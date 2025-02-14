@@ -13,4 +13,4 @@ jobs:
         uses: subosito/flutter-action@v2
         user: bluefireteam/flutter-gh-pages@v7
         with:
-          baseHref: /SOON_FLAPPY/
+           baseHref: /SOON_FLAPPY/
