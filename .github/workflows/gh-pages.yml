@@ -19,3 +19,5 @@ jobs:
       - run: git --work-tree build/web add --all
       - run: git commit -m "Automatic deployment by github-actions"
       - run: git push origin HEAD:gh-pages --force
+       with:
+        baseHref: /SOON_FLAPPY/
