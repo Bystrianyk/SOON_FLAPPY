@@ -13,7 +13,7 @@ jobs:
       - name: Install Flutter
         uses: subosito/flutter-action@v2
       - run: flutter config --enable-web
-      - run: flutter build web --release --wasm --base-href="/SOON_FLAPPY/" --dart-define="NAKAMA_SERVER_KEY=${{ secrets.NAKAMA_SERVER_KEY }}"
+      - run: flutter build web --release --wasm --base-href="/" --dart-define="NAKAMA_SERVER_KEY=${{ secrets.NAKAMA_SERVER_KEY }}"
       - run: git config --global user.name "github-actions"
       - run: git config --global user.email "github-actions@github.com"
       - run: git add -f build/web --all # ✅ Додаємо файли примусово
